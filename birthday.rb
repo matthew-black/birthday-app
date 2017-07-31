@@ -204,8 +204,8 @@ $current_day_of_year = $days_before_month_number[current_month] + current_day
 clear
 app_display
 
-not_done = true
-while not_done
+not_done_messing_around_with_dumb_birthday_app = true
+while not_done_messing_around_with_dumb_birthday_app
   puts " "
   print "Enter 'upcoming', 'all', 'add contact', 'modify contact', 'delete contact' or 'exit': "
   response = gets.chomp.downcase
@@ -233,7 +233,7 @@ while not_done
       delete_contact(db, people)
       people = db.execute("SELECT * FROM people ORDER BY name")
     elsif response == "exit"
-      not_done = false
+      not_done_messing_around_with_dumb_birthday_app = false
       clear
       puts "Thanks for using The Ultimate Birthday Reminder App."
     else
