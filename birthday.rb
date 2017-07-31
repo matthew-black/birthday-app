@@ -132,7 +132,7 @@ def modify_contact(db, people)
         name_changed = false
       end
   end
-    #--modifiesy birthday
+    #--modifies birthday
   birthday_update_finalized = false
   while birthday_update_finalized == false && name_entered != "cancel"
     print "Change this contact's birthday? (y/n) "
