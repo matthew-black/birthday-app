@@ -136,7 +136,7 @@ def modify_contact(db, people)
   birthday_update_finalized = false
   while birthday_update_finalized == false && name_entered != "cancel"
     print "Change this contact's birthday? (y/n) "
-      response = gets.chomp.downcase
+      response = gets.chomp
       if response == "y"
         if name_changed == true
           print "New month to be stored for #{new_name}'s birthday (as integer): "
@@ -208,7 +208,7 @@ not_done_messing_around_with_dumb_birthday_app = true
 while not_done_messing_around_with_dumb_birthday_app
   puts " "
   print "Enter 'upcoming', 'all', 'add contact', 'modify contact', 'delete contact' or 'exit': "
-  response = gets.chomp.downcase
+  response = gets.chomp
     if response == "upcoming"
       clear
       app_display
